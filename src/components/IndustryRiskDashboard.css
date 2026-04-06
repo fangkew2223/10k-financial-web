@@ -1,0 +1,214 @@
+/* ═══════════════════════════════════════════════════════════
+   Industry-Specific Risk Intelligence — Styles
+   ═══════════════════════════════════════════════════════════ */
+.ir-dashboard { min-height: 100vh; background: #f8fafc; }
+
+/* Header */
+.ir-header { background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%); color: white; padding: 2rem 2rem 0; }
+.ir-header-content { display: flex; align-items: center; gap: 1.5rem; max-width: 1400px; margin: 0 auto; padding-bottom: 1.5rem; }
+.ir-header-icon { font-size: 2.5rem; background: rgba(255,255,255,0.1); border-radius: 16px; width: 64px; height: 64px; display: flex; align-items: center; justify-content: center; }
+.ir-title { font-size: 1.75rem; font-weight: 800; margin: 0; }
+.ir-subtitle { font-size: 0.85rem; color: #94a3b8; margin: 0.25rem 0 0; }
+.ir-header-stats { display: flex; gap: 1.5rem; margin-left: auto; }
+.ir-stat { display: flex; flex-direction: column; align-items: center; background: rgba(255,255,255,0.08); border-radius: 12px; padding: 0.75rem 1.25rem; min-width: 70px; }
+.ir-stat-value { font-size: 1.5rem; font-weight: 800; color: #f8fafc; }
+.ir-stat-label { font-size: 0.68rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em; }
+
+/* Nav */
+.ir-nav { display: flex; gap: 0.25rem; max-width: 1400px; margin: 0 auto; }
+.ir-nav-btn { display: flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.25rem; background: transparent; border: none; color: #94a3b8; font-size: 0.85rem; font-weight: 600; cursor: pointer; border-bottom: 3px solid transparent; transition: all 0.2s; border-radius: 8px 8px 0 0; }
+.ir-nav-btn:hover { color: #e2e8f0; background: rgba(255,255,255,0.05); }
+.ir-nav-btn.active { color: white; border-bottom-color: #3b82f6; background: rgba(59,130,246,0.1); }
+
+/* Content */
+.ir-content { max-width: 1400px; margin: 0 auto; padding: 1.5rem 2rem 3rem; }
+.ir-section { margin-bottom: 2rem; }
+.ir-section h2 { font-size: 1.25rem; font-weight: 700; color: #1e293b; margin: 0 0 1rem; }
+.ir-section-desc { color: #64748b; font-size: 0.9rem; margin: -0.5rem 0 1.25rem; line-height: 1.5; }
+
+/* Framework Diagram */
+.ir-framework { display: flex; align-items: center; justify-content: center; gap: 1rem; flex-wrap: wrap; padding: 2rem; background: white; border-radius: 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+.ir-fw-step { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; padding: 1.5rem 2rem; border: 2px solid #e2e8f0; border-radius: 12px; background: #f8fafc; min-width: 140px; transition: all 0.2s; }
+.ir-fw-step:hover { border-color: #3b82f6; }
+.ir-fw-step.highlight { border-color: #3b82f6; background: #eff6ff; }
+.ir-fw-step.result { border-color: #22c55e; background: #f0fdf4; }
+.ir-fw-icon { font-size: 2rem; }
+.ir-fw-label { font-size: 0.85rem; font-weight: 700; color: #1e293b; text-align: center; line-height: 1.3; }
+.ir-fw-desc { font-size: 0.72rem; color: #64748b; text-align: center; }
+.ir-fw-plus { font-size: 1.5rem; font-weight: 800; color: #94a3b8; }
+
+/* Industry Grid */
+.ir-industry-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1rem; }
+.ir-industry-card { background: white; border-radius: 12px; padding: 1.25rem; border-top: 4px solid; box-shadow: 0 1px 3px rgba(0,0,0,0.06); cursor: pointer; transition: all 0.2s; }
+.ir-industry-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-2px); }
+.ir-ind-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; }
+.ir-ind-icon { font-size: 1.75rem; }
+.ir-ind-name { font-size: 1rem; font-weight: 700; color: #1e293b; margin: 0; }
+.ir-ind-count { font-size: 0.72rem; color: #94a3b8; }
+.ir-ind-risk { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem; }
+.ir-ind-risk-label { font-size: 0.68rem; color: #94a3b8; text-transform: uppercase; white-space: nowrap; }
+.ir-ind-risk-bar { flex: 1; height: 8px; background: #f1f5f9; border-radius: 4px; overflow: hidden; }
+.ir-ind-risk-fill { height: 100%; border-radius: 4px; transition: width 0.5s; }
+.ir-ind-risk-value { font-size: 0.9rem; font-weight: 800; min-width: 28px; text-align: right; }
+.ir-ind-logic { margin-bottom: 0.75rem; }
+.ir-ind-logic-label { font-size: 0.7rem; font-weight: 700; color: #94a3b8; text-transform: uppercase; display: block; margin-bottom: 0.2rem; }
+.ir-ind-logic-text { font-size: 0.82rem; color: #475569; }
+.ir-ind-metrics { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.ir-ind-metric-tag { font-size: 0.65rem; font-weight: 600; padding: 0.15rem 0.4rem; border: 1px solid; border-radius: 4px; }
+
+/* Chart Wrapper */
+.ir-chart-wrapper { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+
+/* Sector Selector */
+.ir-sector-selector { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+.ir-sector-btn { padding: 0.5rem 1rem; border: 2px solid #e2e8f0; background: white; border-radius: 8px; font-size: 0.85rem; font-weight: 600; color: #475569; cursor: pointer; transition: all 0.15s; }
+.ir-sector-btn:hover { border-color: #3b82f6; }
+.ir-sector-btn.active { font-weight: 700; }
+
+/* Sector Info */
+.ir-sector-info { background: white; border-radius: 12px; padding: 1.5rem; border-left: 5px solid; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+.ir-sector-info h2 { margin: 0 0 0.5rem; }
+.ir-sector-logic { font-size: 0.9rem; color: #475569; margin: 0 0 0.75rem; }
+.ir-sector-metrics-list { display: flex; align-items: center; flex-wrap: wrap; gap: 0.4rem; font-size: 0.85rem; color: #475569; }
+.ir-sector-metric-badge { color: white; font-size: 0.7rem; font-weight: 600; padding: 0.2rem 0.5rem; border-radius: 4px; }
+
+/* Company Grid */
+.ir-company-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 1rem; }
+.ir-company-card { background: white; border-radius: 12px; padding: 1.25rem; border-left: 4px solid; box-shadow: 0 1px 3px rgba(0,0,0,0.06); cursor: pointer; transition: all 0.2s; }
+.ir-company-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-2px); }
+.ir-cc-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.25rem; }
+.ir-cc-ticker { font-size: 1.15rem; font-weight: 800; color: #1e293b; }
+.ir-cc-level { font-size: 0.68rem; font-weight: 700; padding: 0.2rem 0.5rem; border-radius: 20px; }
+.ir-cc-company { font-size: 0.85rem; color: #475569; margin-bottom: 0.75rem; }
+.ir-cc-scores { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem; padding: 0.5rem; background: #f8fafc; border-radius: 8px; }
+.ir-cc-score-item { display: flex; flex-direction: column; align-items: center; }
+.ir-cc-score-label { font-size: 0.6rem; color: #94a3b8; text-transform: uppercase; }
+.ir-cc-score-value { font-size: 1rem; font-weight: 800; color: #1e293b; }
+.ir-cc-score-plus, .ir-cc-score-eq { font-weight: 800; color: #94a3b8; font-size: 0.9rem; }
+.ir-cc-metrics-preview { display: flex; flex-direction: column; gap: 0.3rem; margin-bottom: 0.5rem; }
+.ir-cc-metric-mini { display: flex; align-items: center; gap: 0.4rem; font-size: 0.78rem; }
+.ir-cc-metric-dot { width: 8px; height: 8px; border-radius: 50%; }
+.ir-cc-metric-dot.good { background: #22c55e; }
+.ir-cc-metric-dot.warning { background: #f59e0b; }
+.ir-cc-metric-dot.critical { background: #ef4444; }
+.ir-cc-metric-name { color: #64748b; flex: 1; }
+.ir-cc-metric-val { font-weight: 700; color: #1e293b; }
+.ir-cc-summary { font-size: 0.78rem; color: #64748b; line-height: 1.4; margin: 0; }
+
+/* Company Selector Pills */
+.ir-company-selector { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+.ir-comp-pill { display: flex; align-items: center; gap: 0.35rem; padding: 0.4rem 0.8rem; border: 2px solid transparent; border-radius: 8px; background: white; font-size: 0.8rem; font-weight: 700; color: #475569; cursor: pointer; transition: all 0.15s; box-shadow: 0 1px 2px rgba(0,0,0,0.04); }
+.ir-comp-pill:hover { box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
+.ir-comp-pill.active { font-weight: 800; }
+.ir-pill-dot { width: 8px; height: 8px; border-radius: 50%; }
+
+/* Company Header */
+.ir-comp-header { display: flex; align-items: center; justify-content: space-between; background: white; border-radius: 16px; padding: 1.5rem 2rem; border-left: 5px solid; box-shadow: 0 2px 8px rgba(0,0,0,0.06); margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem; }
+.ir-comp-header-left h2 { font-size: 1.4rem; font-weight: 800; color: #1e293b; margin: 0; }
+.ir-comp-ticker { font-size: 0.85rem; color: #64748b; font-weight: 600; }
+.ir-comp-header-scores { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
+.ir-score-box { display: flex; flex-direction: column; align-items: center; padding: 0.5rem 1rem; background: #f8fafc; border-radius: 8px; }
+.ir-score-box.overlay { background: #eff6ff; }
+.ir-score-box.final { background: #f0fdf4; }
+.ir-score-label { font-size: 0.6rem; color: #94a3b8; text-transform: uppercase; }
+.ir-score-val { font-size: 1.1rem; font-weight: 800; color: #1e293b; }
+.ir-score-op { font-weight: 800; color: #94a3b8; font-size: 1.1rem; }
+.ir-comp-level-badge { font-size: 0.75rem; font-weight: 700; padding: 0.3rem 0.75rem; border-radius: 20px; }
+
+/* Summary Box */
+.ir-summary-box { background: white; border-radius: 12px; padding: 1.25rem; box-shadow: 0 1px 3px rgba(0,0,0,0.06); border-left: 4px solid #3b82f6; }
+.ir-summary-box p { font-size: 0.9rem; color: #334155; line-height: 1.6; margin: 0; }
+
+/* Metrics Grid */
+.ir-metrics-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; }
+.ir-metric-card { background: white; border-radius: 12px; padding: 1.25rem; border-top: 4px solid; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+.ir-mc-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; }
+.ir-mc-name { font-size: 0.85rem; font-weight: 700; color: #1e293b; }
+.ir-mc-status { font-size: 0.6rem; font-weight: 700; padding: 0.15rem 0.5rem; border-radius: 4px; }
+.ir-mc-value { font-size: 1.5rem; font-weight: 800; margin-bottom: 0.25rem; }
+.ir-mc-threshold { font-size: 0.72rem; color: #94a3b8; margin-bottom: 0.5rem; }
+.ir-mc-sparkline { position: relative; background: #f8fafc; border-radius: 6px; overflow: hidden; margin-bottom: 0.5rem; }
+.ir-mc-trend-label { position: absolute; bottom: 2px; right: 6px; font-size: 0.6rem; color: #94a3b8; }
+.ir-mc-desc { font-size: 0.78rem; color: #64748b; line-height: 1.4; margin: 0; }
+
+/* Drivers */
+.ir-drivers-list { display: flex; flex-direction: column; gap: 0.5rem; }
+.ir-driver-row { display: flex; align-items: center; gap: 0.75rem; background: white; border-radius: 8px; padding: 0.75rem 1rem; box-shadow: 0 1px 2px rgba(0,0,0,0.04); }
+.ir-driver-arrow { font-size: 1rem; font-weight: 700; width: 20px; text-align: center; }
+.ir-driver-arrow.negative { color: #ef4444; }
+.ir-driver-arrow.positive { color: #22c55e; }
+.ir-driver-info { flex: 1; }
+.ir-driver-factor { font-size: 0.88rem; font-weight: 600; color: #1e293b; display: block; }
+.ir-driver-desc { font-size: 0.75rem; color: #64748b; }
+.ir-driver-cat { font-size: 0.6rem; font-weight: 600; padding: 0.15rem 0.4rem; border: 1px solid; border-radius: 3px; text-transform: uppercase; white-space: nowrap; }
+.ir-driver-impact { font-size: 0.9rem; font-weight: 800; min-width: 35px; text-align: right; }
+.ir-driver-impact.negative { color: #ef4444; }
+.ir-driver-impact.positive { color: #22c55e; }
+
+/* Stress Tests */
+.ir-stress-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1rem; }
+.ir-stress-card { background: white; border-radius: 12px; padding: 1.25rem; border-left: 4px solid; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+.ir-stress-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; }
+.ir-stress-header h4 { font-size: 0.95rem; font-weight: 700; color: #1e293b; margin: 0; }
+.ir-stress-status { font-size: 0.65rem; font-weight: 700; padding: 0.2rem 0.5rem; border-radius: 4px; }
+.ir-stress-desc { font-size: 0.82rem; color: #64748b; margin: 0 0 0.75rem; }
+.ir-stress-result { display: flex; gap: 1rem; }
+.ir-stress-metric { display: flex; flex-direction: column; align-items: center; flex: 1; background: #f8fafc; border-radius: 6px; padding: 0.4rem; }
+.ir-stress-label { font-size: 0.6rem; color: #94a3b8; text-transform: uppercase; }
+.ir-stress-val { font-size: 0.95rem; font-weight: 700; color: #1e293b; }
+
+/* Systemic Signals */
+.ir-systemic-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 1rem; }
+.ir-systemic-card { background: white; border-radius: 12px; padding: 1.25rem; border-left: 4px solid; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+.ir-sys-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; }
+.ir-sys-industry { font-size: 0.82rem; font-weight: 600; color: #475569; }
+.ir-sys-severity { font-size: 0.65rem; font-weight: 700; padding: 0.2rem 0.5rem; border-radius: 4px; }
+.ir-sys-signal { font-size: 0.95rem; font-weight: 700; color: #1e293b; margin: 0 0 0.5rem; }
+.ir-sys-desc { font-size: 0.82rem; color: #64748b; line-height: 1.5; margin: 0 0 0.75rem; }
+.ir-sys-affected { display: flex; align-items: center; gap: 0.5rem; font-size: 0.78rem; color: #475569; margin-bottom: 0.5rem; }
+.ir-sys-affected-bar { flex: 1; height: 6px; background: #f1f5f9; border-radius: 3px; overflow: hidden; }
+.ir-sys-drivers { display: flex; flex-direction: column; gap: 0.2rem; }
+.ir-sys-driver-tag { font-size: 0.75rem; color: #64748b; }
+
+/* Framework Table */
+.ir-framework-table-wrapper { overflow-x: auto; border-radius: 12px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); background: white; }
+.ir-framework-table { width: 100%; border-collapse: collapse; font-size: 0.84rem; }
+.ir-framework-table thead { background: linear-gradient(135deg, #0f172a, #1e293b); }
+.ir-framework-table thead th { color: #e2e8f0; font-weight: 700; font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.04em; padding: 0.85rem 1rem; text-align: left; }
+.ir-framework-table tbody tr { border-bottom: 1px solid #f1f5f9; transition: background 0.15s; }
+.ir-framework-table tbody tr:hover { background: #f8fafc; }
+.ir-framework-table tbody td { padding: 0.8rem 1rem; color: #334155; line-height: 1.5; }
+
+/* Educational Section */
+.ir-edu-container { background: white; border-radius: 16px; padding: 1.75rem 2rem; border-left: 5px solid; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+.ir-edu-intro { margin-bottom: 1.5rem; }
+.ir-edu-intro p { font-size: 0.92rem; color: #334155; line-height: 1.7; margin: 0; }
+.ir-edu-metrics-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 1.25rem; }
+.ir-edu-metric-card { background: #f8fafc; border-radius: 12px; padding: 1.25rem 1.5rem; border: 1px solid #e2e8f0; transition: all 0.2s; }
+.ir-edu-metric-card:hover { border-color: #94a3b8; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+.ir-edu-metric-card h4 { font-size: 1rem; font-weight: 700; color: #1e293b; margin: 0 0 0.75rem; }
+.ir-edu-what, .ir-edu-why, .ir-edu-read { font-size: 0.84rem; color: #475569; line-height: 1.6; margin: 0 0 0.6rem; }
+.ir-edu-what strong, .ir-edu-why strong, .ir-edu-read strong { color: #1e293b; }
+.ir-edu-good { background: #dcfce7; color: #166534; padding: 0.1rem 0.4rem; border-radius: 3px; font-weight: 600; font-size: 0.82rem; }
+.ir-edu-warn { background: #fef3c7; color: #92400e; padding: 0.1rem 0.4rem; border-radius: 3px; font-weight: 600; font-size: 0.82rem; }
+.ir-edu-bad { background: #fee2e2; color: #991b1b; padding: 0.1rem 0.4rem; border-radius: 3px; font-weight: 600; font-size: 0.82rem; }
+
+/* Empty State */
+.ir-empty { text-align: center; padding: 3rem; color: #94a3b8; font-size: 0.9rem; background: white; border-radius: 12px; }
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .ir-header-content { flex-wrap: wrap; }
+  .ir-header-stats { margin-left: 0; width: 100%; }
+  .ir-industry-grid, .ir-company-grid, .ir-metrics-grid, .ir-stress-grid, .ir-systemic-grid { grid-template-columns: 1fr; }
+  .ir-comp-header { flex-direction: column; text-align: center; }
+}
+@media (max-width: 768px) {
+  .ir-header { padding: 1rem 1rem 0; }
+  .ir-content { padding: 1rem; }
+  .ir-nav { overflow-x: auto; }
+  .ir-nav-btn { white-space: nowrap; font-size: 0.78rem; padding: 0.6rem 0.8rem; }
+  .ir-framework { flex-direction: column; }
+  .ir-fw-plus { transform: rotate(90deg); }
+  .ir-driver-row { flex-wrap: wrap; }
+}

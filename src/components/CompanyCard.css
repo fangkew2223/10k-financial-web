@@ -1,0 +1,88 @@
+.company-card {
+  display: flex;
+  align-items: stretch;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 16px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.company-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.14);
+}
+
+.card-rank {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 64px;
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  color: #f0c040;
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.card-body {
+  flex: 1;
+  padding: 18px 22px;
+}
+
+.card-header {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.card-ticker {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #4f8ef7;
+  background: #eef4ff;
+  padding: 2px 10px;
+  border-radius: 6px;
+  letter-spacing: 1px;
+}
+
+.card-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.card-description {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0 0 12px 0;
+  line-height: 1.5;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.card-sector {
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 3px 12px;
+  border-radius: 20px;
+  border: 1px solid;
+  letter-spacing: 0.5px;
+}
+
+.card-marketcap {
+  font-size: 0.88rem;
+  color: #444;
+}
+
+.card-marketcap strong {
+  color: #1a1a2e;
+}

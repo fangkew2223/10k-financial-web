@@ -1,0 +1,329 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f4f8;
+  color: #1a1a2e;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Header ── */
+.app-header {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
+  padding: 28px 24px 0 24px;
+  color: white;
+}
+
+.header-content {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.header-logo {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.app-title {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+}
+
+.app-subtitle {
+  font-size: 0.95rem;
+  color: #a0b4cc;
+  margin-top: 4px;
+}
+
+/* ── Nav Tabs ── */
+.app-nav {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  gap: 4px;
+  padding-top: 4px;
+}
+
+.app-nav-tab {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.07);
+  border: none;
+  border-radius: 10px 10px 0 0;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  position: relative;
+}
+
+.app-nav-tab:hover {
+  background: rgba(255, 255, 255, 0.14);
+  color: #ffffff;
+}
+
+.app-nav-tab.active {
+  background: #f0f4f8;
+  color: #1a1a2e;
+}
+
+.app-nav-tab.coming-soon-tab {
+  opacity: 0.8;
+}
+
+.nav-icon {
+  font-size: 1rem;
+}
+
+.nav-label {
+  white-space: nowrap;
+}
+
+.nav-badge {
+  background: #e8a020;
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 8px;
+  letter-spacing: 0.3px;
+}
+
+/* ── Coming Soon Page ── */
+.coming-soon-page {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 16px;
+  min-height: 60vh;
+}
+
+.coming-soon-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 48px 40px;
+  max-width: 560px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.coming-soon-icon {
+  font-size: 4rem;
+  margin-bottom: 16px;
+}
+
+.coming-soon-title {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin-bottom: 12px;
+}
+
+.coming-soon-desc {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.coming-soon-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 8px 24px;
+  border-radius: 24px;
+  margin-bottom: 24px;
+  letter-spacing: 0.5px;
+}
+
+.coming-soon-note {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 28px;
+  background: #f5f8ff;
+  border-left: 4px solid #4f8ef7;
+  padding: 14px 16px;
+  border-radius: 0 8px 8px 0;
+  text-align: left;
+}
+
+.coming-soon-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.feature-item {
+  background: #f0f4f8;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #333;
+  text-align: left;
+}
+
+/* ── Main ── */
+.app-main {
+  flex: 1;
+  max-width: 860px;
+  width: 100%;
+  margin: 32px auto;
+  padding: 0 16px;
+}
+
+/* ── Filter Bar ── */
+.filter-bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+  background: #ffffff;
+  padding: 14px 18px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.filter-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #555;
+  white-space: nowrap;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filter-btn {
+  padding: 6px 16px;
+  border: 1.5px solid #d0d8e8;
+  border-radius: 20px;
+  background: #f5f8ff;
+  color: #444;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.filter-btn:hover {
+  border-color: #4f8ef7;
+  color: #4f8ef7;
+  background: #eef4ff;
+}
+
+.filter-btn.active {
+  background: #4f8ef7;
+  border-color: #4f8ef7;
+  color: #ffffff;
+}
+
+/* ── Count ── */
+.company-count {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 20px;
+  padding-left: 4px;
+}
+
+.company-count strong {
+  color: #1a1a2e;
+}
+
+.click-hint {
+  color: #4f8ef7;
+  font-style: italic;
+}
+
+/* ── Company List ── */
+.company-list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── More Coming Soon Card ── */
+.more-coming-soon-card {
+  margin-top: 12px;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
+  border-radius: 16px;
+  padding: 24px 28px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.more-coming-soon-inner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.more-coming-soon-icon {
+  font-size: 2.4rem;
+  flex-shrink: 0;
+}
+
+.more-coming-soon-text {
+  flex: 1;
+  min-width: 200px;
+}
+
+.more-coming-soon-text h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.more-coming-soon-text p {
+  font-size: 0.88rem;
+  color: #a0b4cc;
+  line-height: 1.6;
+}
+
+.more-coming-soon-badge {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 6px 16px;
+  border-radius: 20px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* ── Footer ── */
+.app-footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.78rem;
+  color: #999;
+  background: #e8edf3;
+  border-top: 1px solid #d8dfe8;
+}
