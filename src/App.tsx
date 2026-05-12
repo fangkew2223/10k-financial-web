@@ -7,13 +7,14 @@ import StockScreener from "./components/StockScreener";
 import ForecastDashboard from "./components/ForecastDashboard";
 import WatchlistDashboard from "./components/WatchlistDashboard";
 import IndustryRiskDashboard from "./components/IndustryRiskDashboard";
+import MCPRepoPage from "./components/MCPRepoPage";
 import { top10NasdaqCompanies, NasdaqCompany } from "./data/nasdaqCompanies";
 import { getAllTransparencyData } from "./data/transparencyData";
 import { getCompanyFinancials, CompanyFinancials } from "./data/financialData";
 
 const sectors = ["All", ...Array.from(new Set(top10NasdaqCompanies.map((c) => c.sector)))];
 
-type AppTab = "top10" | "tenk" | "screener" | "forecast" | "industry" | "watchlist";
+type AppTab = "top10" | "tenk" | "screener" | "forecast" | "industry" | "watchlist" | "mcp";
 
 const appTabs: { key: AppTab; label: string; icon: string; comingSoon?: boolean }[] = [
   { key: "top10", label: "US Public Companies", icon: "🏆" },
@@ -22,30 +23,8 @@ const appTabs: { key: AppTab; label: string; icon: string; comingSoon?: boolean 
   { key: "forecast", label: "Forecast & Alerts", icon: "🔮" },
   { key: "industry", label: "Industry Risk", icon: "🏭" },
   { key: "watchlist", label: "Watchlist", icon: "⭐" },
+  { key: "mcp", label: "MCP Server", icon: "🔌" },
 ];
-
-function ComingSoon({ title, icon, description }: { title: string; icon: string; description: string }) {
-  return (
-    <div className="coming-soon-page">
-      <div className="coming-soon-card">
-        <div className="coming-soon-icon">{icon}</div>
-        <h2 className="coming-soon-title">{title}</h2>
-        <p className="coming-soon-desc">{description}</p>
-        <div className="coming-soon-badge">🚧 Coming Soon</div>
-        <p className="coming-soon-note">
-          This feature will be powered by an <strong>MCP (Model Context Protocol) Server</strong> that
-          connects to SEC EDGAR filings, parses 10-K documents, and provides AI-driven financial analysis.
-        </p>
-        <div className="coming-soon-features">
-          <div className="feature-item">📊 Automated 10-K parsing</div>
-          <div className="feature-item">🤖 AI-powered risk analysis</div>
-          <div className="feature-item">📉 Multi-year trend detection</div>
-          <div className="feature-item">🔗 Real-time SEC EDGAR integration</div>
-        </div>
-      </div>
-    </div>
-  );
-}
 
 function App() {
   const [activeTab, setActiveTab] = useState<AppTab>("top10");
@@ -122,6 +101,8 @@ function App() {
           <WatchlistDashboard />
         </main>
       )}
+
+      {activeTab === "mcp" && <MCPRepoPage />}
 
       {activeTab === "top10" && selectedCompany && (
         <main style={{ flex: 1 }}>

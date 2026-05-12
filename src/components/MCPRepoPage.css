@@ -1,0 +1,140 @@
+.mcp-page {
+  flex: 1;
+  width: 100%;
+  max-width: 960px;
+  margin: 32px auto;
+  padding: 0 16px 48px;
+}
+
+.mcp-hero-card {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  background: linear-gradient(135deg, #ffffff 0%, #f5f8ff 100%);
+  border: 1px solid #dce7fb;
+  border-radius: 24px;
+  padding: 36px;
+  box-shadow: 0 8px 28px rgba(22, 33, 62, 0.1);
+}
+
+.mcp-hero-icon {
+  width: 88px;
+  height: 88px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 3rem;
+  background: linear-gradient(135deg, #1a1a2e, #0f3460);
+  box-shadow: 0 10px 24px rgba(15, 52, 96, 0.24);
+}
+
+.mcp-hero-content {
+  flex: 1;
+}
+
+.mcp-kicker {
+  display: inline-block;
+  color: #4f8ef7;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.mcp-hero-content h2 {
+  color: #1a1a2e;
+  font-size: 2rem;
+  font-weight: 850;
+  margin-bottom: 12px;
+}
+
+.mcp-hero-content p {
+  color: #4b5563;
+  font-size: 1rem;
+  line-height: 1.7;
+  max-width: 680px;
+}
+
+.mcp-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.mcp-primary-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #1a1a2e;
+  color: #ffffff;
+  border-radius: 999px;
+  padding: 11px 20px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  text-decoration: none;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+}
+
+.mcp-primary-link:hover {
+  background: #0f3460;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(15, 52, 96, 0.22);
+}
+
+.mcp-repo-url {
+  background: #eef4ff;
+  border: 1px solid #d6e4ff;
+  border-radius: 999px;
+  color: #23406f;
+  font-size: 0.82rem;
+  padding: 9px 14px;
+}
+
+.mcp-info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.mcp-info-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.mcp-info-card h3 {
+  color: #1a1a2e;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.mcp-info-card p {
+  color: #5f6b7a;
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+.mcp-info-card code {
+  color: #0f3460;
+  font-weight: 700;
+}
+
+@media (max-width: 760px) {
+  .mcp-hero-card {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 28px;
+  }
+
+  .mcp-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
